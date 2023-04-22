@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+   .one{
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    position: relative;
+   }
+   .test{
+    background-color:inherit;
+   }
+   .two:hover{
+    transform: translateY(-15px);
+    transition: transform 0.6s;
+   }
+   .two{
+    width:200px;
+    height: 100px;
+    border:1px solid #fff;
+    position:absolute;
+    top:215px;
+    left: 200px;
+    z-index:4;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 25px;
+    color: #fff;
+   }
+   .three{
+     width:192px;
+    height: 100px;
+    border-bottom:1px solid #fff;
+    position:absolute;
+    top:205px;
+    left: 204px;
+    z-index: 3;
+   }
+   .fore{
+     width:184px;
+    height: 100px;
+    border-bottom:1px solid #fff;
+    position:absolute;
+    top:210px;
+    left: 208px;
+    z-index: 2;
+   }
+   .five{
+     width:176px;
+    height: 100px;
+    border-bottom:1px solid #fff;
+    position:absolute;
+    top:215px;
+    left: 212px;
+    z-index: 1;
+   }
+  </style>
+</head>
+<body>
+  <div class="one">
+   <div class="two test"> hover me</div>
+   <div class="three test"></div>
+   <div class="fore test"></div>
+   <div class="five test"></div>
+  </div>
+</body>
+</html>
